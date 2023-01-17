@@ -1,0 +1,9 @@
+image: leanprovercommunity/mathlib:gitpod
+
+vscode:
+  extensions:
+    - jroesch.lean
+
+tasks:
+  - init: leanpkg configure && leanproject get-cache --fallback=download-all
+    command: . /home/gitpod/.profile
